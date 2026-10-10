@@ -35,3 +35,4 @@ select{font-size:12px;-webkit-appearance:none;appearance:none;padding:8px}
 .thumb{position:relative;flex:0 0 auto}.thumb canvas{width:64px;height:96px;image-rendering:pixelated;border:2px solid #333;border-radius:4px;display:block;cursor:pointer}
 .thumb.cur canvas{border-color:#ffe600}.thumb .x{position:absolute;top:-6px;right:-6px;min-height:0;padding:2px 5px;font-size:8px;border-width:2px;background:#ff1744}
 footer{text-align:center;color:#666;margin-top:20px;font-size:7px}
+.toggles{flex-wrap:wrap}.toggles .seg{flex:1 1 100%}
