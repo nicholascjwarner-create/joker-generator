@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0018"><title>Joker Card Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><h1><span class="j">JOKER</span> <span class="c">CARD</span><br><span class="g">GENERATOR</span></h1><p class="blink">★ PRESS NEW JOKER TO PLAY ★</p></header>
+<main>
+<section class="stage">
+ <div class="cabinet" id="cabinet"><canvas id="card" aria-label="Joker card - tap or swipe for the next one"></canvas><div class="hint">TAP OR SWIPE ▸</div></div>
+ <button id="newBtn" class="mega">🃏 NEW JOKER</button>
+ <div class="row"><button id="prevBtn" class="cyan">◀ BACK</button><button id="favBtn" class="yellow">☆ FAVOURITE</button><button id="nextBtn" class="cyan">NEXT ▶</button></div>
+ <div class="row toggles">
+  <div class="seg" id="resSeg"><button data-v="8">8-BIT</button><button data-v="16">16-BIT</button></div>
+  <label class="tog"><input type="checkbox" id="crt"> CRT</label><label class="tog"><input type="checkbox" id="anim"> ANIMATE</label>
+ </div>
+ <label>Chaos <input type="range" id="chaos" min="0" max="1" step="0.05"></label>
+ <label>Symmetry <input type="range" id="symmetry" min="0" max="1" step="0.05"></label>
+ <div class="seedrow"><label>Seed <input type="number" id="seed" inputmode="numeric"></label><button id="seedGo" class="green">GO</button></div>
+ <div class="seedrow"><label>Card code <input type="text" id="code" spellcheck="false"></label><button id="codeGo" class="green">LOAD</button></div>
+</section>
+<section class="panel">
+ <h2>TRAITS <small>🔒 = keep when rerolling</small></h2>
+ <div class="row"><button id="lockAll">🔒 LOCK ALL</button><button id="unlockAll">🔓 UNLOCK ALL</button></div>
+ <div id="traits"></div>
+</section>
+<section class="panel">
+ <h2>EXPORT PICTURES</h2>
+ <div class="grid2"><button data-x="4" class="exp green">PNG 4×</button><button data-x="8" class="exp green">PNG 8×</button>
+ <button data-x="print" class="exp yellow">PRINT SIZE</button><button id="sheetBtn" class="pink">SHEET OF 9</button>
+ <button id="favSheetBtn" class="pink">FAVOURITES SHEET</button></div>
+ <p class="note" id="sizeNote"></p>
+ <h2>RECENT JOKERS</h2><div id="history" class="strip"></div>
+ <h2>FAVOURITES ★</h2><div id="favs" class="strip"></div><p class="note">Favourites are kept in this browser. Tap ✕ to remove one.</p>
+</section>
+</main>
+<footer>INSERT COIN · © 1986–2026 · FOR NICHOLAS'S GRAPHIC NOVEL</footer>
+<script src="engine.js"></script><script src="app.js"></script></body></html>
